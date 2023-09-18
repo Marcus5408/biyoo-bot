@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "biyoo-bot"
+version = "0.1.0"
+description = ""
+authors = ["Marcus Jones <46655509+Marcus5408@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "biyoo_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
