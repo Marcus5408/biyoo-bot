@@ -8,6 +8,7 @@ packages = [{include = "biyoo_bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+discord-py = "^2.3.2"
 
 
 [build-system]

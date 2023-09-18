@@ -19,10 +19,10 @@ async def on_ready():
 @bot.event
 async def on_reaction_add(reaction, user):
     print(f"{user} reacted with {reaction.emoji} to message '{str(reaction.message.content)}'")
-    if reaction.emoji == "👎" and reaction.count >= 1:  # Check if the reaction count is 3 or more
+    if reaction.emoji == "👎" and reaction.count >= 1:  # change the 1 to the minimum amount of reactions required
         message = reaction.message
-        if message.channel.id == 927372332341817436:
-            destination_channel = bot.get_channel(1153189714153713674)
+        if message.channel.id == 927372332341817436: # channel id of the channel you want to check from
+            destination_channel = bot.get_channel(1153189714153713674) # change the id to the channel you want as the "shameboard" channel
             if destination_channel:
                 # Create an embed
                 embed = discord.Embed(
